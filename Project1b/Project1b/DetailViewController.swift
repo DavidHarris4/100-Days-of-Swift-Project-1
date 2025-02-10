@@ -9,42 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
+    
     var selectedImage: String?
+    var titleString: String?
 
-    var pictures: [String] = []
-//    var selectedPictureNumber = 0
-//    var totalPictures = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let items = try! fm.contentsOfDirectory(atPath: path)
-        
-        for item in items {
-            if item.hasPrefix("nssl") {
-                // this is a picture to load!
-                pictures.append(item)
-            }
-        }
-        
-        var selectedPictureNumber = 0
-        let totalPictures = pictures.count
-        var countTitle: String
-//
-//        countTitle = "Picture \(selectedPictureNumber) of \(totalPictures)"
-//        title = countTitle
-//
-//        while selectedPictureNumber < totalPictures {
-//            selectedPictureNumber += 1
-//            print(countTitle)
-//        }
-//
-        
-        title = countTitle
-        
-//        title = selectedImage
+
+        title = titleString
         
         navigationItem.largeTitleDisplayMode = .never
 

@@ -9,3 +9,6 @@ For this project, your challenges are:
 
 *UPDATE AS OF 2/10*
 *Challenges 1 and 2 are completed. Still working on challenge 3.*
+
+
+*Update: Completed challenge 3. I had to look up a solution after days of trial and error. I learned a lot from the experience.*
